@@ -16,8 +16,8 @@
 		<!-- #########STEP BUTTONS #########-->
 		<div class="step-wrap">
 			<div class="steps text-center">
-				<button id="but1" class="active" type="button" disabled="">Step One</button>
-				<button id="but2" type="button" disabled="">Step Two</button>
+				<button id="but1" class="active" type="button">Step One</button>
+				<button id="but2" type="button" disabled="" class="active">Step Two</button>
 				<button id="but3" type="button" disabled="">Step Three</button>
 			</div>
 		</div>
@@ -27,7 +27,7 @@
 		<form action="#" method="post" novalidate="novalidate">
 
 			<!-- ########### step 1 ####### -->
-			<fieldset role="section" aria-label="Step One" tabindex="-1" id="step-1" class="step-all" aria-hidden="false">
+			<fieldset role="section" aria-label="Step One" tabindex="-1" id="step-1" class="step-all hidden" aria-hidden="true">
 				<h2>Personal Information</h2>
 
 
@@ -35,25 +35,25 @@
 				<div>
 				
 					<label for="title">First Name</label>
-					<input class="form-control" type="text" id="title" required="" aria-required="true">
+					<input class="form-control valid" type="text" id="title" required="" aria-required="true" aria-invalid="false" aria-describedby="title-error"><span id="title-error" class="error" style="display: none;"></span>
 				</div>
 		
         <br><div>
 				
 					<label for="title2">Last Name</label>
-					<input class="form-control" type="text" id="title2" required="" aria-required="true">
+					<input class="form-control valid" type="text" id="title2" required="" aria-required="true" aria-invalid="false">
 				</div><br><div>
 				
 					<label for="title3">Social Security Number</label>
-					<input class="form-control" type="text" id="title3" required="" aria-required="true">
+					<input class="form-control valid" type="text" id="title3" required="" aria-required="true" aria-invalid="false">
 				</div><br><div>
 				
 					<label for="title4">Address</label>
-					<input class="form-control" type="text" id="title4" required="" aria-required="true">
+					<input class="form-control valid" type="text" id="title4" required="" aria-required="true" aria-invalid="false">
 				</div><br><div>
 				
 					<label for="title5">City</label>
-					<input class="form-control" type="text" id="title5" required="" aria-required="true">
+					<input class="form-control valid" type="text" id="title5" required="" aria-required="true" aria-invalid="false">
 				</div><br>
 				<div>
 				
@@ -114,7 +114,7 @@
 <option value="12">Tool</option>
 <option value="13">Other</option>
     </select>
-	</div><br><div><label for="title9"> Attach a copy of Drivers License, Passport, or State ID</label><input id="title9" type="file"></div>
+	</div><br><div><label for="title9"> Attach a copy of Drivers License, Passport, or State ID</label><input id="title9" type="file" class="valid" aria-invalid="false"></div>
  
 	
 				
@@ -125,103 +125,144 @@
              
 		
 						<div>
-					<button class="btn btn-teal btn-next" type="button" aria-controls="step-1" aria-expanded="true">Continue</button>
+					<button class="btn btn-teal btn-next" type="button" aria-controls="step-1" aria-expanded="false">Continue</button>
 				</div>		
 				
 	</fieldset>
 
 			<!-- ########### step 2 ########### -->
-			<fieldset role="section" tabindex="-1" id="step-2" class="step-all" aria-hidden="true">
-				<h2>AUTHORING AGENCY</h2>
-			
-		
+			<fieldset role="section" tabindex="-1" id="step-2" class="step-all visible" aria-hidden="false">
 				<div>
-					<label for="organization"></label>
-					<input class="form-control" type="text" name="organization" id="organization" placeholder="Organization" required="" aria-required="true">
-				</div>
-
-				<div>
-					<label for="url"></label>
-					<input class="form-control" type="text" name="url" id="url" placeholder="Organization Website URL" required="" aria-required="true">
-				
-				</div>
-				
-				<h3>Grantee Status</h3>
-				<p>
-Is your agency a current or former Grants to States for School Emergency Management (GSEM), Readiness and Emergency Management for Schools (REMS), or Emergency Management for Higher Education (EMHE) grantee?
-				</p>		
-				
-
-				<p>My agency is a current GSEM grantee.</p>	
-					<label for="gsem"></label> <label><input type="radio" name="gsem" value="yes"><span></span> Yes</label>
-					<label><input type="radio" name="gsem" value="no"><span></span> No</label>
-			
-	<div class="conditional" data-cond-option="gsem" data-cond-value="yes" style="display: none;">
-						<p>
-		<label for="gsem-num"></label><span class="requireme"></span>
-							<input class="form-control" type="text" name="gsem-num" id="gsem-num" placeholder="Grantee Number">
-						</p>
-						<p>
-		<label for="gsem-year"></label><span class="requireme"></span>
-							<input class="form-control" type="text" name="gsem-year" id="gsem-year" placeholder="Grant Award Year">
-		</p>
-																									</div>
-				
-							<p>My agency is a former GSEM grantee.</p>	
-					<label for="f-gsem"></label> <label><input type="radio" name="f-gsem" value="yes"><span></span> Yes</label>
-					<label><input type="radio" name="f-gsem" value="no"><span></span> No</label>
-			
-	<div class="conditional" data-cond-option="f-gsem" data-cond-value="yes" style="display: none;">
-						<p>
-		<label for="f-gsem-num"></label><span class="requireme"></span>
-							<input class="form-control" type="text" name="f-gsem-num" id="f-gsem-num" placeholder="Grantee Number">
-						</p>
-						<p>
-		<label for="f-gsem-year"></label><span class="requireme"></span>
-							<input class="form-control" type="text" name="f-gsem-year" id="f-gsem-year" placeholder="Grant Award Year">
-		</p>
-																									</div>
-				
-							<p>My agency is a former REMS grantee.</p>	
-					<label for="f-rems"></label> <label><input type="radio" name="f-rems" value="yes"><span></span> Yes</label>
-					<label><input type="radio" name="f-rems" value="no"><span></span> No</label>
-			
-	<div class="conditional" data-cond-option="f-rems" data-cond-value="yes" style="display: none;">
-						<p>
-		<label for="f-rems-num"></label><span class="requireme"></span>
-							<input class="form-control" type="text" name="gf-rems-num" id="f-rems-num" placeholder="Grantee Number">
-						</p>
-						<p>
-		<label for="f-rems-year"></label><span class="requireme"></span>
-							<input class="form-control" type="text" name="f-rems-year" id="f-rems-year" placeholder="Grant Award Year">
-		</p>
-																									</div>
-				
-							<p>My agency is a former EMHE grantee.</p>	
-					<label for="f-emhe"></label> <label><input type="radio" name="f-emhe" value="yes"><span></span> Yes</label>
-					<label><input type="radio" name="f-emhe" value="no"><span></span> No</label>
-			
-	<div class="conditional" data-cond-option="f-emhe" data-cond-value="yes" style="display: none;">
-						<p>
-		<label for="f-emhe-num"></label><span class="requireme"></span>
-							<input class="form-control" type="text" name="f-emhe-num" id="f-emhe-num" placeholder="Grantee Number">
-						</p>
-						<p>
-		<label for="f-emhe-year"></label><span class="requireme"></span>
-							<input class="form-control" type="text" name="f-emhe-year" id="f-emhe-year" placeholder="Grant Award Year">
-		</p>
-																									</div>
-				
-		<p>
-						<input type="checkbox" name="checklist" value="on"> <label for="no-member"></label>	No, my agency is not a current or former GSEM, REMS, or EMHE grantee.
-		</p>
-				
-	
-				
-				<p>
-					<button class="btn btn-default btn-prev" type="button" aria-controls="step-1" aria-expanded="true">Back</button>
-					<button class="btn btn-default btn-next" type="button" aria-controls="step-3" aria-expanded="false">Continue</button>
-				</p>
+<fieldset><legend>High Blood Pressure</legend>
+<div>
+<div><input id="ck1" type="checkbox"><label for="ck1">Self</label></div>
+<div><input id="ck2" type="checkbox"><label for="ck2">Currently Receiving Treatment</label></div>
+<div><input id="ck3" type="checkbox"><label for="ck3">Family History</label></div>
+<div><input id="ck4" type="checkbox"><label for="ck4">Hospitalization in the past 12 months</label></div>
+</div>
+</fieldset>
+<div><label>Heart Attack</label>
+<div>
+<div><label><input type="checkbox">Self</label></div>
+<div><label><input type="checkbox">Currently Receiving Treatment</label></div>
+<div><label><input type="checkbox">Family History</label></div>
+<div><label><input type="checkbox">Hospitalization in the past 12 months</label></div>
+</div>
+</div>
+<div><label>Congestive Heart Failure</label>
+<div>
+<div><label><input type="checkbox">Self</label></div>
+<div><label><input type="checkbox">Currently Receiving Treatment</label></div>
+<div><label><input type="checkbox">Family History</label></div>
+<div><label><input type="checkbox">Hospitalization in the past 12 months</label></div>
+</div>
+</div>
+<div><label>Diabetes</label>
+<div>
+<div><label><input type="checkbox">Self</label></div>
+<div><label><input type="checkbox">Currently Receiving Treatment</label></div>
+<div><label><input type="checkbox">Family History</label></div>
+<div><label><input type="checkbox">Hospitalization in the past 12 months</label></div>
+</div>
+</div>
+<div><label>Poor Circulation</label>
+<div>
+<div><label><input type="checkbox">Self</label></div>
+<div><label><input type="checkbox">Currently Receiving Treatment</label></div>
+<div><label><input type="checkbox">Family History</label></div>
+<div><label><input type="checkbox">Hospitalization in the past 12 months</label></div>
+</div>
+</div>
+<div><label>High Cholesterol</label>
+<div>
+<div><label><input type="checkbox">Self</label></div>
+<div><label><input type="checkbox">Currently Receiving Treatment</label></div>
+<div><label><input type="checkbox">Family History</label></div>
+<div><label><input type="checkbox">Hospitalization in the past 12 months</label></div>
+</div>
+</div>
+<div><label>Cancer</label>
+<div>
+<div><label><input type="checkbox">Self</label></div>
+<div><label><input type="checkbox">Currently Receiving Treatment</label></div>
+<div><label><input type="checkbox">Family History</label></div>
+<div><label><input type="checkbox">Hospitalization in the past 12 months</label></div>
+</div>
+</div>
+<div><label>Stroke</label>
+<div>
+<div><label><input type="checkbox">Self</label></div>
+<div><label><input type="checkbox">Currently Receiving Treatment</label></div>
+<div><label><input type="checkbox">Family History</label></div>
+<div><label><input type="checkbox">Hospitalization in the past 12 months</label></div>
+</div>
+</div>
+<div><label>Lung Disease (Asthma/COPD)</label>
+<div>
+<div><label><input type="checkbox">Self</label></div>
+<div><label><input type="checkbox">Currently Receiving Treatment</label></div>
+<div><label><input type="checkbox">Family History</label></div>
+<div><label><input type="checkbox">Hospitalization in the past 12 months</label></div>
+</div>
+</div>
+<div><label>Obsesity/Overweight</label>
+<div>
+<div><label><input type="checkbox">Self</label></div>
+<div><label><input type="checkbox">Currently Receiving Treatment</label></div>
+<div><label><input type="checkbox">Family History</label></div>
+<div><label><input type="checkbox">Hospitalization in the past 12 months</label></div>
+</div>
+</div>
+<div><label>Depression</label>
+<div>
+<div><label><input type="checkbox">Self</label></div>
+<div><label><input type="checkbox">Currently Receiving Treatment</label></div>
+<div><label><input type="checkbox">Family History</label></div>
+<div><label><input type="checkbox">Hospitalization in the past 12 months</label></div>
+</div>
+</div>
+<div><label>Anxiety</label>
+<div>
+<div><label><input type="checkbox">Self</label></div>
+<div><label><input type="checkbox">Currently Receiving Treatment</label></div>
+<div><label><input type="checkbox">Family History</label></div>
+<div><label><input type="checkbox">Hospitalization in the past 12 months</label></div>
+</div>
+</div>
+<hr>
+<div><label>Tobacco/Nicotine Use</label>
+<div><select>
+<option disabled="disabled" selected="selected" value="">Select One</option>
+<option>Yes</option>
+<option>No</option>
+</select></div>
+</div>
+<div><label>Alcohol - Avg. Drinks/Week</label>
+<div><select>
+<option disabled="disabled" selected="selected" value="">Select One</option>
+<option>None</option>
+<option>1-7</option>
+<option>8-14</option>
+<option>More than 14</option>
+</select></div>
+</div>
+<div><label>Exercise - Avg. Hours/Week</label>
+<div><select>
+<option disabled="disabled" selected="selected" value="">Select One</option>
+<option>None</option>
+<option>1-2.5</option>
+<option>More than 2.5</option>
+</select></div>
+</div>
+<div><label>Sleep - Avg. Hours/Night</label>
+<div><select>
+<option disabled="disabled" selected="selected" value="">Select One</option>
+<option>Less than 7</option>
+<option>7-8</option>
+<option>More than 8</option>
+</select></div>
+</div>
+</div>
 </fieldset>
 
 

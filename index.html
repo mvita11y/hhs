@@ -58,7 +58,7 @@
 				<div>
 				
 		<label for="title6">State</label>
-		<br><select required="" aria-required="true" id="title6">
+		<br><select required="" aria-required="true" id="title6" class="valid" aria-invalid="false">
 <option>SELECT ONE</option>	
 <option value="1">Checklist</option>	
 <option value="2">Drill, Tabletop, or Other Exercise</option>	
@@ -79,7 +79,7 @@
 	<div>
 				
 		<label for="title7">Race</label>
-		<br><select required="" aria-required="true" id="title7">
+		<br><select required="" aria-required="true" id="title7" class="valid" aria-invalid="false">
 <option>SELECT ONE</option>	
 <option value="1">Checklist</option>	
 <option value="2">Drill, Tabletop, or Other Exercise</option>	
@@ -98,7 +98,7 @@
 	</div><br><div>
 				
 		<label for="title8">Gender</label>
-		<br><select required="" aria-required="true" id="title8">
+		<br><select required="" aria-required="true" id="title8" class="valid" aria-invalid="false">
 <option>SELECT ONE</option>	
 <option value="1">Checklist</option>	
 <option value="2">Drill, Tabletop, or Other Exercise</option>	
@@ -115,31 +115,18 @@
 <option value="13">Other</option>
     </select>
 	</div><br><div><label for="title9"> Attach a copy of Drivers License, Passport, or State ID</label><input id="title9" type="file"></div>
-<hr class="line"> 
+ 
 	
-				<h2>TYPE</h2>		Alison, I think this is what you are looking for but we will need to discuss.	
-				<div>
-				<input type="checkbox" name="checklist" value="on"> <label for="checklist"> Checklist</label>
-				</div>
-             <!-- Checklist -->
-<div class="conditional" data-cond-option="checklist" data-cond-value="on" style="display: none;">
-										<label for="checklist-area"></label><span class="requireme">*</span><textarea class="form-control" type="textarea" name="checklist-area" id="checklist-area" placeholder="Please add as much detail as possible." required="" aria-required="true"></textarea>
-	<p><input type="file" id="input"></p>
+				
+             
 
-</div>
-				<!-- / Checklist -->
-	<p>			
-	<input type="checkbox" name="drill-other" value="on"> <label for="drill-other"> Drill, Tabletop, or Other Exercise</label>
-		</p>
-             <!-- Drill Other -->
-		<div class="conditional" data-cond-option="drill-other" data-cond-value="on" style="display: none;">
-										<label for="drill-area"></label><span class="requireme">*</span><textarea class="form-control" type="textarea" name="drill-area" id="drill-area" placeholder="Please add as much detail as possible." required="" aria-required="true"></textarea>
-			<p><input type="file" id="input"></p>
-
-			</div>
-						<p>
+				
+	
+             
+		
+						<div>
 					<button class="btn btn-teal btn-next" type="button" aria-controls="step-1" aria-expanded="true">Continue</button>
-				</p>		
+				</div>		
 				
 	</fieldset>
 
@@ -297,6 +284,7 @@ Is your agency a current or former Grants to States for School Emergency Managem
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script><script src="./script.js"></script>
+
 
 
 

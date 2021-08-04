@@ -27,22 +27,38 @@
 		<form action="#" method="post" novalidate="novalidate">
 
 			<!-- ########### step 1 ####### -->
-			<fieldset role="main" aria-label="Step One" tabindex="-1" id="step-1" class="step-all" aria-hidden="false">
-				<h2>RESOURCE</h2>
+			<fieldset role="section" aria-label="Step One" tabindex="-1" id="step-1" class="step-all" aria-hidden="false">
+				<h2>Personal Information</h2>
 
 
 			
 				<div>
 				
-					<label for="title"></label>
-					<input class="form-control" type="text" name="title" id="title" placeholder="TITLE" required="" aria-required="true">
+					<label for="title">First Name</label>
+					<input class="form-control" type="text" id="title" required="" aria-required="true" placeholder="TITLE">
 				</div>
 		
-        <h3>Type</h3>
+        <div>
+				
+					<label for="title2">Last Name</label>
+					<input class="form-control" type="text" id="title2" required="" aria-required="true" placeholder="TITLE">
+				</div><div>
+				
+					<label for="title3">Social Security Number</label>
+					<input class="form-control" type="text" id="title3" required="" aria-required="true" placeholder="TITLE">
+				</div><div>
+				
+					<label for="title4">Address</label>
+					<input class="form-control" type="text" id="title4" required="" aria-required="true" placeholder="TITLE">
+				</div><div>
+				
+					<label for="title5">City</label>
+					<input class="form-control" type="text" id="title5" required="" aria-required="true" placeholder="TITLE">
+				</div>
 				<div>
 				
-		<label></label>
-		<select class="select" name="type" required="" aria-required="true">
+		<label for="title6">State</label>
+		<br><select required="" aria-required="true" id="title6" aria-invalid="false" class="select valid">
 <option>SELECT ONE</option>	
 <option value="1">Checklist</option>	
 <option value="2">Drill, Tabletop, or Other Exercise</option>	
@@ -246,6 +262,7 @@ Is your agency a current or former Grants to States for School Emergency Managem
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script><script src="./script.js"></script>
+
 
 
 

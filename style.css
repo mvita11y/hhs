@@ -101,12 +101,12 @@ label{
 	 font-size: 1.3em;
 }
  .btn.btn-next {
-	 background: #087875;
+	 background: #006EBC;
 	 float: right;
 	 color: #fff;
 }
  .btn.btn-next:hover {
-	 background: #035d5b;
+	 background: #014a7e;
 	 float: right;
 }
  .btn.btn-success {

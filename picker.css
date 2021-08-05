@@ -137,8 +137,10 @@
 .appt-calendar-wrapper > .appt-calendar > .week > .day.sat,
 .appt-calendar-wrapper > .appt-calendar > .week > .day.sun,
 .appt-calendar-wrapper > .appt-calendar > .week > .day.off {
-  background: #ccc;
+      width: 20%;
+    background: linear-gradient(to top right, #fff calc(50% - 1px), #e30808, #fff calc(50% + 1px) );
   color: black;
+  
 }
 .appt-calendar-wrapper > .appt-calendar > .week > .day.out {
   background: #eee;

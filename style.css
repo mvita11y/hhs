@@ -53,8 +53,7 @@
  */
  h1 {
 	 font-weight: bold;
-	 margin-bottom: 40px;
-	 color: #ff790e;
+	 color: #006EBC;
 }
  h2 {
 	 color: #006EBC;
@@ -67,14 +66,7 @@
 	 height: 6px;
 	 background-color: gray;
 }
- .valid, .valid:focus, .valid:hover {
-	 background: lightgreen !important;
-}
- .form-control.error {
-	 border: solid 1px red;
-	 background: yellow;
-	 color: black;
-}
+ 
  label .optional {
 	 font-weight: normal;
 	 font-size: 90%;
@@ -119,7 +111,7 @@ label{
 }
  .btn.btn-success {
 	 float: right;
-	 background: red !important;
+	 background: #038886;
 }
  .btn.btn-prev {
 	 background: gray;

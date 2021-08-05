@@ -17,9 +17,9 @@
 		<!-- #########STEP BUTTONS #########-->
 		<div class="step-wrap">
 			<div class="steps text-center">
-				<button id="but1" class="active" type="button">Step One</button>
-				<button id="but2" type="button" class="active">Step Two</button>
-				<button id="but3" type="button" disabled="disabled" class="active">Step Three</button>
+				<button id="but1" class="active" type="button" disabled="">Step One</button>
+				<button id="but2" type="button" disabled="">Step Two</button>
+				<button id="but3" type="button" disabled="">Step Three</button>
 			</div>
 		</div>
 
@@ -28,7 +28,7 @@
 		<form action="#" method="post" novalidate="novalidate">
 
 			<!-- ########### step 1 ####### -->
-			<fieldset role="section" aria-label="Step One" tabindex="-1" id="step-1" class="step-all hidden" aria-hidden="true">
+			<fieldset role="section" aria-label="Step One" tabindex="-1" id="step-1" class="step-all" aria-hidden="false">
 				<h2>Personal Information</h2>
 
 
@@ -36,25 +36,25 @@
 				<div>
 				
 					<label for="title">First Name</label>
-					<input class="form-control valid" type="text" id="title" required="" aria-required="true" aria-invalid="false">
+					<input class="form-control" type="text" id="title" required="" aria-required="true">
 				</div>
 		
         <br><div>
 				
 					<label for="title2">Last Name</label>
-					<input class="form-control valid" type="text" id="title2" required="" aria-required="true" aria-invalid="false">
+					<input class="form-control" type="text" id="title2" required="" aria-required="true">
 				</div><br><div>
 				
 					<label for="title3">Social Security Number</label>
-					<input class="form-control valid" type="text" id="title3" required="" aria-required="true" aria-invalid="false">
+					<input class="form-control" type="text" id="title3" required="" aria-required="true">
 				</div><br><div>
 				
 					<label for="title4">Address</label>
-					<input class="form-control valid" type="text" id="title4" required="" aria-required="true" aria-invalid="false">
+					<input class="form-control" type="text" id="title4" required="" aria-required="true">
 				</div><br><div>
 				
 					<label for="title5">City</label>
-					<input class="form-control valid" type="text" id="title5" required="" aria-required="true" aria-describedby="title5-error" aria-invalid="false"><span id="title5-error" class="error" style="display: none;"></span>
+					<input class="form-control" type="text" id="title5" required="" aria-required="true">
 				</div><br>
 				<div>
 				
@@ -115,7 +115,7 @@
 <option value="12">Tool</option>
 <option value="13">Other</option>
     </select>
-	</div><br><div><label for="title9"> Attach a copy of Drivers License, Passport, or State ID</label><input id="title9" type="file" class="valid" aria-invalid="false"></div>
+	</div><br><div><label for="title9"> Attach a copy of Drivers License, Passport, or State ID</label><input id="title9" type="file"></div>
  
 	
 				
@@ -126,14 +126,14 @@
              
 		
 						<div>
-					<button class="btn btn-teal btn-next" type="button" aria-controls="step-1" aria-expanded="false">Continue</button>
+					<button class="btn btn-teal btn-next" type="button" aria-controls="step-1" aria-expanded="true">Continue</button>
 				</div>		
 				
 	</fieldset>
 
 			<!-- ########### step 2 ########### -->
-			<fieldset role="section" tabindex="-1" id="step-2" class="step-all hidden" aria-hidden="true">
-				<fieldset aria-hidden="true" class="hidden"><legend>High Blood Pressure</legend>
+			<fieldset role="section" tabindex="-1" id="step-2" class="step-all" aria-hidden="true">
+				<fieldset><legend>High Blood Pressure</legend>
 <div>
 <div><input id="ck1" type="checkbox"><label for="ck1">Self</label></div>
 <div><input id="ck2" type="checkbox"><label for="ck2">Currently Receiving Treatment</label></div>
@@ -147,123 +147,123 @@
 				<div>
 <h3 id="hb" style="display: block; width: 100%; padding: 0; margin-bottom: 21px; font-size: 22.5px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5;">High Blood Pressure</h3>
 <div>
-<div><input id="ck1" type="checkbox"><label for="hb1">Self</label></div>
-<div><input id="ck2" type="checkbox"><label for="hb2">Currently Receiving Treatment</label></div>
-<div><input id="ck3" type="checkbox"><label for="hb3">Family History</label></div>
-<div><input id="ck4" type="checkbox"><label for="hb4">Hospitalization in the past 12 months</label></div>
+<div><input id="ck1" type="checkbox" /><label for="hb1">Self</label></div>
+<div><input id="ck2" type="checkbox" /><label for="hb2">Currently Receiving Treatment</label></div>
+<div><input id="ck3" type="checkbox" /><label for="hb3">Family History</label></div>
+<div><input id="ck4" type="checkbox" /><label for="hb4">Hospitalization in the past 12 months</label></div>
 </div>
 </div>
 <div>
 <h3 id="ha" style="display: block; width: 100%; padding: 0; margin-bottom: 21px; font-size: 22.5px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5;">Heart Attack</h3>
 <div>
-<div><input id="ck1" type="checkbox"><label for="ha1">Self</label></div>
-<div><input id="ck2" type="checkbox"><label for="ha2">Currently Receiving Treatment</label></div>
-<div><input id="ck3" type="checkbox"><label for="ha3">Family History</label></div>
-<div><input id="ck4" type="checkbox"><label for="ha4">Hospitalization in the past 12 months</label></div>
+<div><input id="ck1" type="checkbox" /><label for="ha1">Self</label></div>
+<div><input id="ck2" type="checkbox" /><label for="ha2">Currently Receiving Treatment</label></div>
+<div><input id="ck3" type="checkbox" /><label for="ha3">Family History</label></div>
+<div><input id="ck4" type="checkbox" /><label for="ha4">Hospitalization in the past 12 months</label></div>
 </div>
 </div>
 <div>
 <h3 id="cf" style="display: block; width: 100%; padding: 0; margin-bottom: 21px; font-size: 22.5px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5;">Congestive Heart Failure</h3>
 <div>
-<div><input id="ck1" type="checkbox"><label for="cf1">Self</label></div>
-<div><input id="ck2" type="checkbox"><label for="cf2">Currently Receiving Treatment</label></div>
-<div><input id="ck3" type="checkbox"><label for="cf3">Family History</label></div>
-<div><input id="ck4" type="checkbox"><label for="cf4">Hospitalization in the past 12 months</label></div>
+<div><input id="ck1" type="checkbox" /><label for="cf1">Self</label></div>
+<div><input id="ck2" type="checkbox" /><label for="cf2">Currently Receiving Treatment</label></div>
+<div><input id="ck3" type="checkbox" /><label for="cf3">Family History</label></div>
+<div><input id="ck4" type="checkbox" /><label for="cf4">Hospitalization in the past 12 months</label></div>
 </div>
 </div>
 <div>
 <h3 id="db" style="display: block; width: 100%; padding: 0; margin-bottom: 21px; font-size: 22.5px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5;">Diabetes</h3>
 <div>
-<div><input id="ck1" type="checkbox"><label for="db1">Self</label></div>
-<div><input id="ck2" type="checkbox"><label for="db2">Currently Receiving Treatment</label></div>
-<div><input id="ck3" type="checkbox"><label for="db3">Family History</label></div>
-<div><input id="ck4" type="checkbox"><label for="db4">Hospitalization in the past 12 months</label></div>
+<div><input id="ck1" type="checkbox" /><label for="db1">Self</label></div>
+<div><input id="ck2" type="checkbox" /><label for="db2">Currently Receiving Treatment</label></div>
+<div><input id="ck3" type="checkbox" /><label for="db3">Family History</label></div>
+<div><input id="ck4" type="checkbox" /><label for="db4">Hospitalization in the past 12 months</label></div>
 </div>
 </div>
 <div>
 <h3 id="pc" style="display: block; width: 100%; padding: 0; margin-bottom: 21px; font-size: 22.5px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5;">Poor Circulation</h3>
 <div>
-<div><input id="ck1" type="checkbox"><label for="pc1">Self</label></div>
-<div><input id="ck2" type="checkbox"><label for="pc2">Currently Receiving Treatment</label></div>
-<div><input id="ck3" type="checkbox"><label for="pc3">Family History</label></div>
-<div><input id="ck4" type="checkbox"><label for="pc4">Hospitalization in the past 12 months</label></div>
+<div><input id="ck1" type="checkbox" /><label for="pc1">Self</label></div>
+<div><input id="ck2" type="checkbox" /><label for="pc2">Currently Receiving Treatment</label></div>
+<div><input id="ck3" type="checkbox" /><label for="pc3">Family History</label></div>
+<div><input id="ck4" type="checkbox" /><label for="pc4">Hospitalization in the past 12 months</label></div>
 </div>
 </div>
 <div>
 <h3 id="hc" style="display: block; width: 100%; padding: 0; margin-bottom: 21px; font-size: 22.5px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5;">High Cholesterol</h3>
 <div>
-<div><input id="ck1" type="checkbox"><label for="hc1">Self</label></div>
-<div><input id="ck2" type="checkbox"><label for="hc2">Currently Receiving Treatment</label></div>
-<div><input id="ck3" type="checkbox"><label for="hc3">Family History</label></div>
-<div><input id="ck4" type="checkbox"><label for="hc4">Hospitalization in the past 12 months</label></div>
+<div><input id="ck1" type="checkbox" /><label for="hc1">Self</label></div>
+<div><input id="ck2" type="checkbox" /><label for="hc2">Currently Receiving Treatment</label></div>
+<div><input id="ck3" type="checkbox" /><label for="hc3">Family History</label></div>
+<div><input id="ck4" type="checkbox" /><label for="hc4">Hospitalization in the past 12 months</label></div>
 </div>
 </div>
 <div>
 <h3 id="hb" style="display: block; width: 100%; padding: 0; margin-bottom: 21px; font-size: 22.5px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5;">High Blood Pressure</h3>
 <div>
-<div><input id="ck1" type="checkbox"><label for="hb1">Self</label></div>
-<div><input id="ck2" type="checkbox"><label for="hb2">Currently Receiving Treatment</label></div>
-<div><input id="ck3" type="checkbox"><label for="hb3">Family History</label></div>
-<div><input id="ck4" type="checkbox"><label for="hb4">Hospitalization in the past 12 months</label></div>
+<div><input id="ck1" type="checkbox" /><label for="hb1">Self</label></div>
+<div><input id="ck2" type="checkbox" /><label for="hb2">Currently Receiving Treatment</label></div>
+<div><input id="ck3" type="checkbox" /><label for="hb3">Family History</label></div>
+<div><input id="ck4" type="checkbox" /><label for="hb4">Hospitalization in the past 12 months</label></div>
 </div>
 </div>
 <div>
 <h3 id="cc" style="display: block; width: 100%; padding: 0; margin-bottom: 21px; font-size: 22.5px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5;">Cancer</h3>
 <div>
-<div><input id="ck1" type="checkbox"><label for="cc1">Self</label></div>
-<div><input id="ck2" type="checkbox"><label for="cc2">Currently Receiving Treatment</label></div>
-<div><input id="ck3" type="checkbox"><label for="cc3">Family History</label></div>
-<div><input id="ck4" type="checkbox"><label for="cc4">Hospitalization in the past 12 months</label></div>
+<div><input id="ck1" type="checkbox" /><label for="cc1">Self</label></div>
+<div><input id="ck2" type="checkbox" /><label for="cc2">Currently Receiving Treatment</label></div>
+<div><input id="ck3" type="checkbox" /><label for="cc3">Family History</label></div>
+<div><input id="ck4" type="checkbox" /><label for="cc4">Hospitalization in the past 12 months</label></div>
 </div>
 </div>
 <div>
 <h3 id="st" style="display: block; width: 100%; padding: 0; margin-bottom: 21px; font-size: 22.5px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5;">Stroke</h3>
 <div>
-<div><input id="ck1" type="checkbox"><label for="st1">Self</label></div>
-<div><input id="ck2" type="checkbox"><label for="st2">Currently Receiving Treatment</label></div>
-<div><input id="ck3" type="checkbox"><label for="st3">Family History</label></div>
-<div><input id="ck4" type="checkbox"><label for="st4">Hospitalization in the past 12 months</label></div>
+<div><input id="ck1" type="checkbox" /><label for="st1">Self</label></div>
+<div><input id="ck2" type="checkbox" /><label for="st2">Currently Receiving Treatment</label></div>
+<div><input id="ck3" type="checkbox" /><label for="st3">Family History</label></div>
+<div><input id="ck4" type="checkbox" /><label for="st4">Hospitalization in the past 12 months</label></div>
 </div>
 </div>
 <div>
 <h3 id="ld" style="display: block; width: 100%; padding: 0; margin-bottom: 21px; font-size: 22.5px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5;">Lung Disease</h3>
 <div>
-<div><input id="ck1" type="checkbox"><label for="ld1">Self</label></div>
-<div><input id="ck2" type="checkbox"><label for="ld2">Currently Receiving Treatment</label></div>
-<div><input id="ck3" type="checkbox"><label for="ld3">Family History</label></div>
-<div><input id="ck4" type="checkbox"><label for="ld4">Hospitalization in the past 12 months</label></div>
+<div><input id="ck1" type="checkbox" /><label for="ld1">Self</label></div>
+<div><input id="ck2" type="checkbox" /><label for="ld2">Currently Receiving Treatment</label></div>
+<div><input id="ck3" type="checkbox" /><label for="ld3">Family History</label></div>
+<div><input id="ck4" type="checkbox" /><label for="ld4">Hospitalization in the past 12 months</label></div>
 </div>
 </div>
 <div>
 <h3 id="ob" style="display: block; width: 100%; padding: 0; margin-bottom: 21px; font-size: 22.5px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5;">Obesity</h3>
 <div>
-<div><input id="ck1" type="checkbox"><label for="ob1">Self</label></div>
-<div><input id="ck2" type="checkbox"><label for="ob2">Currently Receiving Treatment</label></div>
-<div><input id="ck3" type="checkbox"><label for="ob3">Family History</label></div>
-<div><input id="ck4" type="checkbox"><label for="ob4">Hospitalization in the past 12 months</label></div>
+<div><input id="ck1" type="checkbox" /><label for="ob1">Self</label></div>
+<div><input id="ck2" type="checkbox" /><label for="ob2">Currently Receiving Treatment</label></div>
+<div><input id="ck3" type="checkbox" /><label for="ob3">Family History</label></div>
+<div><input id="ck4" type="checkbox" /><label for="ob4">Hospitalization in the past 12 months</label></div>
 </div>
 </div>
 <div>
 <h3 id="dp" style="display: block; width: 100%; padding: 0; margin-bottom: 21px; font-size: 22.5px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5;">Depression</h3>
 <div>
-<div><input id="ck1" type="checkbox"><label for="dp1">Self</label></div>
-<div><input id="ck2" type="checkbox"><label for="dp2">Currently Receiving Treatment</label></div>
-<div><input id="ck3" type="checkbox"><label for="dp3">Family History</label></div>
-<div><input id="ck4" type="checkbox"><label for="dp4">Hospitalization in the past 12 months</label></div>
+<div><input id="ck1" type="checkbox" /><label for="dp1">Self</label></div>
+<div><input id="ck2" type="checkbox" /><label for="dp2">Currently Receiving Treatment</label></div>
+<div><input id="ck3" type="checkbox" /><label for="dp3">Family History</label></div>
+<div><input id="ck4" type="checkbox" /><label for="dp4">Hospitalization in the past 12 months</label></div>
 </div>
 </div>
 <div>
 <h3 id="ax" style="display: block; width: 100%; padding: 0; margin-bottom: 21px; font-size: 22.5px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5;">Anxiety</h3>
 <div>
-<div><input id="ck1" type="checkbox"><label for="ax1">Self</label></div>
-<div><input id="ck2" type="checkbox"><label for="ax2">Currently Receiving Treatment</label></div>
-<div><input id="ck3" type="checkbox"><label for="ax3">Family History</label></div>
-<div><input id="ck4" type="checkbox"><label for="ax4">Hospitalization in the past 12 months</label></div>
+<div><input id="ck1" type="checkbox" /><label for="ax1">Self</label></div>
+<div><input id="ck2" type="checkbox" /><label for="ax2">Currently Receiving Treatment</label></div>
+<div><input id="ck3" type="checkbox" /><label for="ax3">Family History</label></div>
+<div><input id="ck4" type="checkbox" /><label for="ax4">Hospitalization in the past 12 months</label></div>
 </div>
 </div>
 				<div>
-					<button class="btn btn-default btn-prev" type="button" aria-controls="step-1" aria-expanded="false">Back</button>
-					<button class="btn btn-default btn-next" type="button" aria-controls="step-3" aria-expanded="true">Continue</button>
+					<button class="btn btn-default btn-prev" type="button" aria-controls="step-1" aria-expanded="true">Back</button>
+					<button class="btn btn-default btn-next" type="button" aria-controls="step-3" aria-expanded="false">Continue</button>
 				</div>
 </fieldset>
 
@@ -272,10 +272,10 @@
 
 			<!-- ########### step 3 ########### -->
 
-			<fieldset role="section" aria-label="Step Three" tabindex="-1" id="step-3" class="step-all visible" aria-hidden="false">
-				<h2>Submission and Authorization</h2>
-		
-				<h3>Terms of Submission</h3>
+			<fieldset role="section" aria-label="Step Three" tabindex="-1" id="step-3" class="step-all" aria-hidden="true">
+			<h2>Schedule an Appointment</h2>
+				<h3> Select a Date and Available Time</h3>
+				
 			<div class="appt-calendar-wrapper">
   <div class="appt-calendar">
     <div class="month-controls">
@@ -360,55 +360,11 @@
 					<button class="btn btn-default btn-prev" type="button" aria-controls="step-4" aria-expanded="true">BACK</button>
 					<button class="btn btn-success" type="submit">Submit</button>
 					<!-- <button class="btn btn-default btn-edit" type="button">Edit</button>  -->
-				</fieldset> <fieldset aria-label="Step Three" tabindex="-1" id="step-3" class="step-all" aria-hidden="true">
-				<h2>Submission and Authorization</h2>
-		
-				<h3>Terms of Submission</h3>
-			<p><label for="agree-to-terms"></label><span class="requireme">*</span><input type="checkbox" name="agree-to-terms" value="agree-to-terms" required="" aria-required="true"> I agree to the Terms of Submission (by providing this information, you agree that you are authorized to release this resource to the REMS TA Center for general inclusion on the Tool Box, if selected</p>
-				
-				
-				<p><label for="permission"></label><span class="requireme">*</span><input type="checkbox" name="permission" value="permission" required="" aria-required="true"> I have permission and proper copyright clearance to allow the REMS TA Center to post this document as a part of the Tool Box
-				</p>
-				<hr class="line">
+			</fieldset>
 
-						<p>
-					<label for="first-name"></label>
-					<span class="requireme">*</span><input class="form-control" type="text" name="first-name" id="first-name" placeholder="FIRST NAME" required="" aria-required="true">
-				</p>
-				<p>
-					<label for="last-name"></label><span class="requireme">*</span>
-					<input class="form-control" type="text" name="last-name" id="last-name" placeholder="LAST NAME" required="" aria-required="true">
-				</p>
-				
-								<p>
-					<label for="organization"></label><span class="requireme">*</span>
-					<input class="form-control" type="text" name="organization" id="organization" placeholder="ORGANIZATION" required="" aria-required="true">
-				</p>
-				
-	<p>
-					<label for="title"></label><span class="requireme">*</span>
-					<input class="form-control" type="text" name="title" id="title" placeholder="TITLE" required="" aria-required="true">
-				</p>
-				
-				<label for="phone-number"></label><span class="requireme">*</span>
-				<input class="form-control" type="tel" name="phone-number" id="phone-number" minlength="10" placeholder="WORK PHONE" required="" aria-required="true">
-				<p></p>
-				<p>
-					<label for="email-address"></label><span class="requireme">*</span>
-					<input class="form-control" type="email" name="email-address" id="email-address" placeholder="WORK EMAIL" required="" aria-required="true">
-				</p>
-				
-				<p>
-					<button class="btn btn-default btn-prev" type="button" aria-controls="step-4" aria-expanded="true">BACK</button>
-					<button class="btn btn-success" type="submit">Submit</button>
-					<!-- <button class="btn btn-default btn-edit" type="button">Edit</button>  -->
-				</p>
-			</fieldset></form></section></div>
-			
-
-		
-	
-
+		</form>
+	</section>
+</div>
 
 
 <!-- partial -->
@@ -418,8 +374,7 @@
 <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script><script src="./script.js"></script>
 
 
- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="./picker.js"></script>
-
+ <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./picker.js"></script>
 
 
 
